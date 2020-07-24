@@ -23,6 +23,8 @@
                 
                 } else if(fuelLevelInput.value < 10000 && cargoMassInput.value > 10000) {
                 faultyItems.style.visibility = "visible";
+                pilotStatus.innerHTML = `Pilot Name:  ${pilotNameInput.value}`;
+                copilotStatus.innerHTML = `CoPilot Name: ${copilotNameInput.value}`;
                 fuelStatus.innerHTML = "There is not enough fuel for the journey.";
                 cargoStatus.innerHTML = "There is too much mass for the shuttle to take off.";
                 launchStatus.innerHTML = "Shuttle not ready for launch.";
@@ -30,12 +32,16 @@
 
                 } else if(fuelLevelInput.value < 10000 && cargoMassInput.value < 10000) {
                 faultyItems.style.visibility = "visible";
+                pilotStatus.innerHTML = `Pilot Name:  ${pilotNameInput.value}`;
+                copilotStatus.innerHTML = `CoPilot Name: ${copilotNameInput.value}`;
                 fuelStatus.innerHTML = "There is not enough fuel for the journey.";
                 launchStatus.innerHTML = "Shuttle not ready for launch.";
                 launchStatus.style.color = "red";
 
                 } else if(fuelLevelInput.value > 10000 && cargoMassInput.value > 10000) {
                 faultyItems.style.visibility = "visible";
+                pilotStatus.innerHTML = `Pilot Name:  ${pilotNameInput.value}`;
+                copilotStatus.innerHTML = `CoPilot Name: ${copilotNameInput.value}`;
                 cargoStatus.innerHTML = "There is too much mass for the shuttle to take off.";
                 launchStatus.innerHTML = "Shuttle not ready for launch.";
                 launchStatus.style.color = "red";
